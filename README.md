@@ -20,30 +20,31 @@ Node:
 - [STM32F411CE - BlackPill](https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html "More Info")
 - [BNO085](https://www.adafruit.com/product/4754 "Buy here")
 - NRF24L01
+<br/>
 
 ## System Design
 ---
-<br/>
 <p float="center">
 <img alt="master" src="Imgs/System Design/Master.jpg"width=270x/>
 <img alt="node" src="Imgs/System Design/Node.jpg" width=300x/>
 </p>
+<br/>
 
 ## Schematics
 ---
-<br/>
 <p float="center">
 <img alt="master" src="Schematics/IMG/Master_Schem.jpg"width=314x/>
 <img alt="node" src="Schematics/IMG/Node_Schem.jpg" width=300x/>
 </p>
+<br/>
 
 ## Images
 ---
-<br/>
 <p float="center">
 <img alt="master" src="Imgs/Dis:Assmebled pics/DSC_2217.JPG"width=250x/>
 <img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=350x/>
 </p>
+<br/>
 
 ## Demo Video
 ---
