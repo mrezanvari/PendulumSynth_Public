@@ -29,24 +29,30 @@ Node:
 ## System Design
 ---
 <br/>
-<img alt="master" src="Imgs/System Design/Master.jpg"width=250x/>
-<img alt="node" src="Imgs/System Design/Node.jpg" width=250x/>
+<p float="left">
+<img alt="master" src="Imgs/System Design/Master.jpg"width=270x/>
+<img alt="node" src="Imgs/System Design/Node.jpg" width=200x/>
+</p>
 <br/>
 <br/>
 
 ## Schematics
 ---
 <br/>
-<img alt="master" src="Schematics/IMG/Master_Schem.jpg"width=250x/>
-<img alt="node" src="Schematics/IMG/Node_Schem.jpg" width=250x/>
+<p float="left">
+<img alt="master" src="Schematics/IMG/Master_Schem.jpg"width=314x/>
+<img alt="node" src="Schematics/IMG/Node_Schem.jpg" width=300x/>
+</p>
 <br/>
 <br/>
 
 ## Images
 ---
 <br/>
+<p float="left">
 <img alt="master" src="Imgs/Dis:Assmebled pics/DSC_2217.JPG"width=250x/>
-<img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=250x/>
+<img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=350x/>
+</p>
 <br/>
 <br/>
 
