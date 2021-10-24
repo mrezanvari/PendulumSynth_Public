@@ -54,6 +54,5 @@ If you like the project, you can support or help with the development! Simply cl
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/mrezanvari)
 
 <br/>
-<br/>
 
 #### Much thanks! 🙌🏼
