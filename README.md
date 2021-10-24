@@ -29,7 +29,7 @@ Node:
 ## System Design
 ---
 <br/>
-<p float="left">
+<p float="center">
 <img alt="master" src="Imgs/System Design/Master.jpg"width=270x/>
 <img alt="node" src="Imgs/System Design/Node.jpg" width=200x/>
 </p>
@@ -39,7 +39,7 @@ Node:
 ## Schematics
 ---
 <br/>
-<p float="left">
+<p float="center">
 <img alt="master" src="Schematics/IMG/Master_Schem.jpg"width=314x/>
 <img alt="node" src="Schematics/IMG/Node_Schem.jpg" width=300x/>
 </p>
@@ -49,7 +49,7 @@ Node:
 ## Images
 ---
 <br/>
-<p float="left">
+<p float="center">
 <img alt="master" src="Imgs/Dis:Assmebled pics/DSC_2217.JPG"width=250x/>
 <img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=350x/>
 </p>
