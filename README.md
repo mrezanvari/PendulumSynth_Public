@@ -58,4 +58,5 @@ Node:
 
 ## Demo Video
 ---
-![](Vids/OCT 12/PendulumSynth_COMPRESSED.mp4)
+https://user-images.githubusercontent.com/19628148/138608501-58be7f61-158a-43a7-af3e-a1fcbec70427.mp4
+
