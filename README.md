@@ -47,4 +47,6 @@ https://user-images.githubusercontent.com/19628148/138608542-8e42e0b6-f3e0-4e13-
 
 ## Support
 If you like the project, you can support me or help with the development! Simply clone the repo and commit!
+<br/>
+
 [!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/mrezanvari)
