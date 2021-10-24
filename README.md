@@ -55,4 +55,5 @@ If you like the project, you can support or help with the development! Simply cl
 
 <br/>
 <br/>
-Much thanks! 🙌🏼
+
+# Much thanks! 🙌🏼
