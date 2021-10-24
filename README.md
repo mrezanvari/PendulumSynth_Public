@@ -1,8 +1,8 @@
 # PendulumSynth
 
 <!-- <p align="center"><img src="src/Pendulum_Synth_Teensy4.0_BNO085_MPC4728_V2.X/Master/SplashScreen/pendulumSynth(1).jpg" alt="PendulumSynth_logo"></p> -->
-PendulumSynth is an on-going an open-source porject with the goal of mixing real-world physics into music composition and musical performance.<br/>
-A network of pendulums with bult-in IMU systems can be used to create rythmes and effects, manipulating music in real-time.
+PendulumSynth is an on-going and open-source project with the goal of mixing real-world physics into music composition and musical performance.
+A network of pendulums with built-in IMU systems can be used to create rhythms and effects, manipulating music in real-time.
 <br/>
 <br/>
 <br/>
@@ -29,16 +29,16 @@ Node:
 ## System Design
 ---
 <br/>
-<img alt="master" src="Imgs/System Design/Master.jpg"width=270x/>
-<img alt="node" src="Imgs/System Design/Node.jpg" width=300x/>
+<img alt="master" src="Imgs/System Design/Master.jpg"width=250x/>
+<img alt="node" src="Imgs/System Design/Node.jpg" width=250x/>
 <br/>
 <br/>
 
 ## Schematics
 ---
 <br/>
-<img alt="master" src="Schematics/IMG/Master_Schem.jpg"width=314x/>
-<img alt="node" src="Schematics/IMG/Node_Schem.jpg" width=300x/>
+<img alt="master" src="Schematics/IMG/Master_Schem.jpg"width=250x/>
+<img alt="node" src="Schematics/IMG/Node_Schem.jpg" width=250x/>
 <br/>
 <br/>
 
@@ -46,7 +46,7 @@ Node:
 ---
 <br/>
 <img alt="master" src="Imgs/Dis:Assmebled pics/DSC_2217.JPG"width=250x/>
-<img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=350x/>
+<img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=250x/>
 <br/>
 <br/>
 
