@@ -58,6 +58,4 @@ Node:
 
 ## Demo Video
 ---
-<video width="320" height="240" controls>
-  <source src="Vids/OCT 12/PendulumSynth_COMPRESSED.mp4" type="video/mp4">
-</video>
+![](Vids/OCT 12/PendulumSynth_COMPRESSED.mp4)
