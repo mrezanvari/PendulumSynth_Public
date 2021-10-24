@@ -45,6 +45,7 @@ Node:
 ## Demo Video
 https://user-images.githubusercontent.com/19628148/138608542-8e42e0b6-f3e0-4e13-86f7-b399832cbad7.mp4
 
+<br/>
 ## Support
 If you like the project, you can support me or help with the development! Simply clone the repo and commit! Much thanks! 🙌🏼
 <br/>
