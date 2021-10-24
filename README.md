@@ -4,9 +4,6 @@
 PendulumSynth is an on-going and open-source project with the goal of mixing real-world physics into music composition and musical performance.
 A network of pendulums with built-in IMU systems can be used to create rhythms and effects, manipulating music in real-time.
 <br/>
-<br/>
-<br/>
-<br/>
 
 ## Components
 ---
@@ -23,7 +20,6 @@ Node:
 - [STM32F411CE - BlackPill](https://stm32-base.org/boards/STM32F411CEU6-WeAct-Black-Pill-V2.0.html "More Info")
 - [BNO085](https://www.adafruit.com/product/4754 "Buy here")
 - NRF24L01
-
 <br/>
 
 ## System Design
@@ -34,7 +30,6 @@ Node:
 <img alt="node" src="Imgs/System Design/Node.jpg" width=300x/>
 </p>
 <br/>
-<br/>
 
 ## Schematics
 ---
@@ -44,7 +39,6 @@ Node:
 <img alt="node" src="Schematics/IMG/Node_Schem.jpg" width=300x/>
 </p>
 <br/>
-<br/>
 
 ## Images
 ---
@@ -53,7 +47,6 @@ Node:
 <img alt="master" src="Imgs/Dis:Assmebled pics/DSC_2217.JPG"width=250x/>
 <img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=350x/>
 </p>
-<br/>
 <br/>
 
 ## Demo Video
