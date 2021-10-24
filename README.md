@@ -31,7 +31,7 @@ Node:
 <br/>
 <p float="center">
 <img alt="master" src="Imgs/System Design/Master.jpg"width=270x/>
-<img alt="node" src="Imgs/System Design/Node.jpg" width=200x/>
+<img alt="node" src="Imgs/System Design/Node.jpg" width=300x/>
 </p>
 <br/>
 <br/>
