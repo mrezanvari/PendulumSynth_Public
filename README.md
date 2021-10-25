@@ -40,7 +40,7 @@ Node:
 <p float="center">
 <img alt="master" src="Imgs/Dis:Assmebled pics/DSC_2217.JPG"width=250x/>
 <img alt="node" src="Imgs/Dis:Assmebled pics/DSC_2233.JPG" width=350x/>
-<img alt="pendulum" src="Imgs/V2.X/2021-09-10 22.04.29.jpg" width=350x/>
+<img alt="pendulum" src="Imgs/V2.X/2021-09-10 22.04.29.jpg" width=150x/>
 </p>
 <br/>
 
