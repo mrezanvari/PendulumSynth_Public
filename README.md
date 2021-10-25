@@ -2,8 +2,10 @@
 
 <!-- <p align="center"><img src="src/Pendulum_Synth_Teensy4.0_BNO085_MPC4728_V2.X/Master/SplashScreen/pendulumSynth(1).jpg" alt="PendulumSynth_logo"></p> -->
 PendulumSynth is an on-going and open-source project, running on Arduino platform with the goal of mixing real-world physics into music composition and musical performance.<br/>
-A network of pendulums with built-in IMU systems can be used to create rhythms and effects, manipulating music in real-time.
+A network of pendulums with built-in IMU systems can be used to create rhythms and effects, manipulating music in real-time.<br/>
 <br/>
+More info on Hackaday Posting: https://hackaday.io/project/182341-pendulumsynth<br/>
+
 
 
 ## Components
