@@ -1,4 +1,4 @@
-float firmwareVersion = 2.68;
+float firmwareVersion = 2.7;
 
 #include <SPI.h>
 #include <RF24.h>
@@ -71,9 +71,9 @@ int MIDI_Channel = 1;
 #define MIDI_CC1 0
 #define MIDI_CC2 1
 #define MIDI_CC3 2
-#define MIDI_Trig1 60
-#define MIDI_Trig2 61
-#define MIDI_Trig3 62
+#define MIDI_Trig1 36
+#define MIDI_Trig2 -1
+#define MIDI_Trig3 -1
 
 bool MIDI_Trigs_MEM [] = {false, false, false}; //this is used to prevent sending the trig signal if already sent
 
@@ -322,7 +322,42 @@ void pass2Output()
         break;
       }
 
-    case 5: //diff
+       case 5: //div3
+      {
+        for (int i = 0; i < 3; i++)
+        {
+          float inData = dataBuffer[i];
+          float range = i == 0 ? ranges[0] : i == 1 ? ranges[1] : i == 2 ? ranges[2] : 0;
+          float cvVal;
+          if (abs(inData) > range || ( abs(inData) <= 0.6) )
+          {
+            cvVal = 4095;
+            if (MIDI_Trigs_MEM[i] == false)
+            {
+              usbMIDI.sendNoteOn(MIDI_Trigs[i], 127, MIDI_Channel);
+              MIDI_Trigs_MEM[i] = true;
+            }
+          }
+          
+          else
+          {
+            cvVal = 0;
+            if (MIDI_Trigs_MEM[i] == true)
+            {
+              usbMIDI.sendNoteOff(MIDI_Trigs[i], 0, MIDI_Channel);
+              MIDI_Trigs_MEM[i] = false;
+            }
+          }
+
+          analogWrite(CV_Pins[i], cvVal);
+          DAC.setChannelValue(i == 0 ? MCP4728_CHANNEL_A :
+                              i == 1 ? MCP4728_CHANNEL_B :
+                              MCP4728_CHANNEL_C, cvVal);
+        }
+        break;
+      }
+
+    case 6: //diff
       {
         for (int i = 0; i < 3; i++)
         {
@@ -350,39 +385,39 @@ void pass2Output()
         break;
       }
 
-    case 6: //jusggle! only activates using serial protocol
-      {
-        for (int i = 0; i < 3; i++)
-        {
-          float inData = dataBuffer[i];
-          float range = i == 0 ? ranges[0] : i == 1 ? ranges[1] : i == 2 ? ranges[2] : 0;
-          float cvVal;
-          if (abs(inData) > range)
-          {
-            cvVal = 4095;
-            if (MIDI_Trigs_MEM[i] == false)
-            {
-              usbMIDI.sendNoteOn(MIDI_Trigs[i], 127, MIDI_Channel);
-              MIDI_Trigs_MEM[i] = true;
-            }
-          }
-          else
-          {
-            cvVal = 0;
-            if (MIDI_Trigs_MEM[i] == true)
-            {
-              usbMIDI.sendNoteOff(MIDI_Trigs[i], 0, MIDI_Channel);
-              MIDI_Trigs_MEM[i] = false;
-            }
-          }
-
-          analogWrite(CV_Pins[i], cvVal);
-          DAC.setChannelValue(i == 0 ? MCP4728_CHANNEL_A :
-                              i == 1 ? MCP4728_CHANNEL_B :
-                              MCP4728_CHANNEL_C, cvVal);
-        }
-        break;
-      }
+//    case 7: //jusggle! only activates using serial protocol
+//      {
+//        for (int i = 0; i < 3; i++)
+//        {
+//          float inData = dataBuffer[i];
+//          float range = i == 0 ? ranges[0] : i == 1 ? ranges[1] : i == 2 ? ranges[2] : 0;
+//          float cvVal;
+//          if (abs(inData) > range)
+//          {
+//            cvVal = 4095;
+//            if (MIDI_Trigs_MEM[i] == false)
+//            {
+//              usbMIDI.sendNoteOn(MIDI_Trigs[i], 127, MIDI_Channel);
+//              MIDI_Trigs_MEM[i] = true;
+//            }
+//          }
+//          else
+//          {
+//            cvVal = 0;
+//            if (MIDI_Trigs_MEM[i] == true)
+//            {
+//              usbMIDI.sendNoteOff(MIDI_Trigs[i], 0, MIDI_Channel);
+//              MIDI_Trigs_MEM[i] = false;
+//            }
+//          }
+//
+//          analogWrite(CV_Pins[i], cvVal);
+//          DAC.setChannelValue(i == 0 ? MCP4728_CHANNEL_A :
+//                              i == 1 ? MCP4728_CHANNEL_B :
+//                              MCP4728_CHANNEL_C, cvVal);
+//        }
+//        break;
+//      }
   }
 }
 
@@ -636,12 +671,12 @@ void checkSerial()
 void updateSensorMode()
 {
   rangeMaxValue = 16;
-  if (ui.getMode() == 6)
+  if (ui.getMode() == 7)
   {
     change_IMU_Mode(2, node01);
     rangeMaxValue = 60;
   }
-  else if ((ui.getMode() <= 1 || ui.getMode() > 4) && IMU_Mode != 0) change_IMU_Mode(0, node01);
+  else if ((ui.getMode() <= 1 || ui.getMode() > 5) && IMU_Mode != 0) change_IMU_Mode(0, node01);
   else if (ui.getMode() > 1 && IMU_Mode != 1) change_IMU_Mode(1, node01);
 }
 

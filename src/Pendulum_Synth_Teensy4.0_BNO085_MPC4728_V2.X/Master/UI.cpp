@@ -18,7 +18,7 @@ int modeIndex = 0; // index of the used mode; (gravity:linear acceleration, grav
 int bufferIndex = 0; // index of the current buffer for the graph
 long memTimeStamp = millis(); // saves the current cpu time
 
-#define maxMode 5
+#define maxMode 6
 
 int graphIndex = 0; // index of the current graph shown
 
@@ -84,7 +84,7 @@ void UI::splashScreen(float _firmwareVersion)
     0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x18, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
   };
 
-  
+
   _display->clearDisplay();
   _display->drawBitmap(0, 0,  pendulumSynth, 128, 32, WHITE);
 
@@ -201,7 +201,20 @@ void UI::modeInfoPage()
       }
       break;
 
-    case 5:
+      case 5:
+      {
+        String title = "DIV3";
+        _display->clearDisplay();
+        _display->setTextSize(2); // Draw 2X-scale text
+        _display->setTextColor(SSD1306_WHITE);
+        _display->getTextBounds(title, 0, 0, &x1, &y1, &w, &h);
+        _display->setCursor((_width / 2) - (w / 2), (_height / 2) - (h / 2));
+        _display->println(title);
+        _display->display();
+      }
+      break;
+
+    case 6:
       {
         String title = "DIFF";
         _display->clearDisplay();
@@ -214,7 +227,7 @@ void UI::modeInfoPage()
       }
       break;
 
-      case 6:
+    case 7:
       {
         String title = "JUGGLE!";
         _display->clearDisplay();
@@ -253,7 +266,7 @@ void UI::_update()
 
   graphBuffer.push(dataPoint);
 
-    bufferIndex = bufferIndex >= _width ? 0 : bufferIndex + 1;
+  bufferIndex = bufferIndex >= _width ? 0 : bufferIndex + 1;
 
   _display->fillRect(0, 0, _width, 8, SSD1306_BLACK);
   _display->setCursor(0, 0);
@@ -268,8 +281,9 @@ void UI::_update()
                        : getMode() == 2 ? "P2T"
                        : getMode() == 3 ? "P2P"
                        : getMode() == 4 ? "T2T"
-                       : getMode() == 5 ? "DIFF"
-                       : getMode() == 6 ? "JUGGLE!" : "";
+                       : getMode() == 5 ? "DIV3"
+                       : getMode() == 6 ? "DIFF"
+                       : getMode() == 7 ? "JUGGLE!" : "";
 
   _display->getTextBounds(currentPage, 0, 0, &x1, &y1, &w, &h);
   _display->setCursor(_width - w, 0);
@@ -315,7 +329,8 @@ void UI::nextGraph() // changes the graph
 
 void UI::setMode(int mode)
 {
-  if (mode > maxMode && mode != 6) return;
+  if (mode > maxMode && mode != 7) return;
+  
   modeIndex = mode;
   modeInfoPage();
 }

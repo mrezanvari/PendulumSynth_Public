@@ -20,6 +20,8 @@ float firmwareVersion = 2.0;
 
 #define BNO08X_RST -1
 
+#define BNO08x_I2CADDR_DEFAULT 0x29
+
 Adafruit_BNO08x IMU(BNO08X_RST);
 sh2_SensorValue_t IMU_dataBuffer;
 long mem_delay;

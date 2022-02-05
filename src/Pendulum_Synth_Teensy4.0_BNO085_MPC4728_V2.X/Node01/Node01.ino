@@ -89,7 +89,6 @@ void setup()
   network.begin(90, thisNodeAddr);
 
   //  delay(1000); // to make sure everything is now initialized and ready to go
-
   // just to know when its past the init phase and begins to send data
   digitalWrite(builtIn_LED, LOW);
   delay(100);
@@ -253,7 +252,6 @@ void loop()
     }
     digitalWrite(builtIn_LED, HIGH);
   }
-
   //  Serial.print("delay:");
   //  Serial.println(millis() - mem_delay);
 }
