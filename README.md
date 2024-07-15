@@ -53,14 +53,3 @@ https://user-images.githubusercontent.com/19628148/138608542-8e42e0b6-f3e0-4e13-
 <br/>
 https://youtu.be/r7tXlfV4hvE
 <br/>
-
-
-## Support
-If you like the project, you can support or help with the development! Simply clone/fork the repo and commit! 
-<br/>
-
-[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/mrezanvari)
-
-<br/>
-
-#### Much thanks! 🙌🏼
